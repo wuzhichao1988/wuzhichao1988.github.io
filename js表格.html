@@ -13,15 +13,19 @@
     </style>
 
     <script>
-    
+    //输入行列数
    var rows = prompt("请输入行数");
    var cols = prompt("请输入列数");
+      //表头
     document.write("<table border='1'> ")
-
+      //表格内容
     for(var i=1;i<=rows;i++){
+        //判断奇偶行数
         if(i%2==0){
+            //奇数行
             document.write("<tr class='hd'>");
     } else{
+        //偶数行
         document.write("<tr>");
     }
     
