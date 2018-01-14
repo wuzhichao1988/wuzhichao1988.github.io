@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+       .hd{
+           background-color: green;
+           color:white;
+       }
+    </style>
+
+    <script>
+    
+   var rows = prompt("请输入行数");
+   var cols = prompt("请输入列数");
+    document.write("<table border='1'> ")
+
+    for(var i=1;i<=rows;i++){
+        if(i%2==0){
+            document.write("<tr class='hd'>");
+    } else{
+        document.write("<tr>");
+    }
+    
+    for(var j=1;j<=cols;j++){
+       document.write(" <td>"+i+"行"+j+"列</td>");
+    }
+    document.write("</tr>");
+    }
+   document.write("</table>");
+    </script>
+</head>
+<body>
+
+
+
+</body>
+</html>
